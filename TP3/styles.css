@@ -1,0 +1,228 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.jumbotron {
+    padding: 2rem 2rem;
+    margin-bottom: 2rem;
+    background-color: #BEFCE7;
+    border-radius: .3rem;
+}
+.cielo{
+ position: absolute;
+ background-attachment: fixed;
+ background-position: bottom left;
+ top: 250px;
+ z-index: -1;
+ background:  url("img/fondo.jpg")repeat;
+ width: 100%;
+ height: 720px;
+}
+
+.invisible{
+  display: none;
+}
+
+.piso{
+  position: absolute;
+ background-attachment: fixed;
+ background-position: bottom left;
+ z-index: 1;
+ background:  url("img/piso.png") repeat;
+ width: 100%;
+ height: 400px;
+ animation: movimiento_fondo 3s linear infinite;
+}
+.mensaje_fin{
+  position: absolute;
+  left: 700px;
+  top: 150px;
+}
+
+@keyframes movimiento_fondo {
+ from {
+   background-position-x: 0;
+ }
+ to {
+   background-position-x: -512px;
+ }
+}
+
+::-webkit-scrollbar {
+  display:none;
+}
+
+
+.finn{
+  width: 63px;
+  height: 53px;
+position: absolute;
+left: 15%;
+top: 470px;
+background: url('img/fin.png');
+animation: finn_movimiento 0.9s steps(12) infinite;
+}
+
+.finn_salto{
+width: 64px;
+height: 50px;
+position: absolute;
+left: 15%;
+top: 470px;
+background: url('img/fin_salto.png');
+animation: finn_salto  1.2s steps(5);
+}
+
+.finn_muerte{
+width: 57px;
+height: 70px;
+position: absolute;
+left: 15%;
+top: 467px;
+background: url('img/fin_muerte.png');
+animation: finn_muerte  1.8s steps(18) ;
+
+}
+
+.finn_muerte_2{
+  width: 60px;
+  height: 40px;
+  position: absolute;
+  left: 15%;
+  top: 484px;
+  background: url('img/fin_muerte_2.png');
+  animation: finn_muerte_2  1s  steps(5);
+}
+
+
+.conejo{
+  width: 56px;
+  height: 40px;
+  position: absolute;
+top: 480px;
+  background: url('img/conejo.png');
+  animation: conejo  1s steps(16) infinite;
+}
+
+.rey_hielo{
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: 320px;
+  background: url('img/rey.png');
+  animation: rey_movimiento  1s steps(6) infinite;
+}
+
+.rey_muerte{
+  width: 80px;
+  height: 90px;
+  position: absolute;
+  top: 320px;
+  background: url('img/rey_muerte.png');
+  animation: rey_muerte  1s steps(8) infinite;
+}
+
+
+@keyframes conejo{
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -896px;
+  }
+}
+
+@keyframes finn_muerte{
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -1155px;
+  }
+}
+
+@keyframes finn_muerte_2{
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -320px;
+  }
+}
+
+@keyframes rey_muerte{
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -720px;
+  }
+}
+
+@keyframes rey_movimiento{
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -718px;
+  }
+}
+
+
+
+ @keyframes finn_movimiento {
+   from {
+     background-position-x: 0;
+   }
+   to {
+     background-position-x: -770px;
+   }
+}
+
+@keyframes finn_salto {
+ 0% {
+   left: 15%;
+   top: 470px;
+ }
+ 10% {
+   left: 15%;
+   top: 420px;
+ }
+ 20% {
+   left: 15%;
+   top: 380px;
+ }
+ 30% {
+   left: 15%;
+   top: 340px;
+ }
+ 40% {
+   left: 15%;
+   top: 300px;
+ }
+ 50% {
+   left: 15%;
+   top: 340px;
+ }
+ 60% {
+   left: 15%;
+   top: 380px;
+ }
+ 70% {
+   left: 15%;
+   top: 420px;
+ }
+ 80% {
+   left: 15%;
+   top: 460px;
+ }
+ 90% {
+   left: 15%;
+   top: 470px;
+ }
+ 100% {  background-position-x: -315px; }
+}
+@keyframes  fondo {
+ 100% { background-position: -1920px; }
+}
